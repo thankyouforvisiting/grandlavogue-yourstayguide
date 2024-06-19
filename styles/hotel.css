@@ -1,0 +1,365 @@
+/* FONTS */
+.open-sans {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+h1, h2, h3, h4, h5{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+}
+p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 11pt;
+}
+:root {
+    --primary-color: #000000;
+    --secondary-color: #363636;
+    --accent1-color: #6a7c9a;
+    --accent2-color: #b47c56;
+}
+html,
+body {
+    margin: 0;
+    padding-bottom: 0;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.glvlogo {
+    width: 10%;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    margin: 10px 0;
+}
+
+.glvlogo img {
+    width: 100%;
+    max-width: 100%;
+}
+
+/* Title */
+.title {
+    width: 100%;
+    color: #2a2a2a;
+    text-align: center;
+    margin-top: 10px;
+}
+.title h1{
+    font-size: 18pt;
+    letter-spacing: 2pt;
+}
+/* Language Menu */
+.languagemenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    margin-top: 10px;
+}
+
+.languagemenu .menu-toggle {
+    display: none;
+    color:#0f3f54;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+.languagemenu .menu-links {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu-links {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    justify-content: center;
+    align-items: center; 
+}
+.languagemenu a {
+    text-decoration: none;
+    color:#424242;
+    letter-spacing: 1.2pt;
+    padding: 0 10px;
+    text-align: center;
+    font-size: 10pt;
+}
+.languagemenu a:hover {
+    text-decoration: overline;
+    color: #ffffff;
+}
+/* Introduction */
+.introduction p {
+    padding: 40px 100px;
+    text-align: justify;
+    line-height: 150%;
+}
+
+/* TABS */
+
+.tabshere {
+    overflow: hidden;
+    border: 1px solid #6d7076;
+    background-color: #282828;
+    padding: 40px 100px;
+    margin: 0 100px;
+}
+.tabshere p{
+    color: white;
+}
+.tablinks{
+    color:#ffffff;
+}
+.tabshere button {
+background-color:#6a7c9a;
+float: left;
+border: none;
+outline: none;
+cursor: pointer;
+padding: 14px 16px;
+transition: 0.3s;
+}
+.tabshere button:hover {
+background-color:#b47c56;
+color:azure;
+}
+
+.tabshere button.active {
+background-color: #ddd;
+color: #000000;
+}
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+.tabcontent h3{
+    font-size: 16pt;
+    color: rgb(49, 88, 117);
+}
+.tabcontent p{
+    font-size: 10pt;
+    text-align: justify;
+    line-height: 150%;
+}
+#StayGuide, #FloorGuide , #RoomServices, #Safety, #Dining{
+    padding:50px 100px;
+    margin: 0 100px;
+}
+#contents {
+    display: flex;
+    height: auto;
+    flex-direction: row;
+    max-width: 100%;
+    margin:0;
+    padding: 0;
+    align-items: center;
+}
+#contents img{
+    max-width: 5%;
+    height: 5%;
+    padding: 2px;
+}
+#contents p{
+    padding-left: 20px;
+}
+/* footer */
+footer {
+    background-color:#0f3f54;
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    height: auto;
+    padding: 20px 100px;
+}
+.alllogo, .foot{
+    display: flex;
+    max-width: 100%;
+    flex: 1 1 50%;
+    float: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.foot {
+    display: flex;
+    max-width: 100%;
+    flex-direction: row;
+    padding: 50px;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-start;
+}
+.foot img{
+    padding: 10px;
+}
+.foot img:hover{
+    background-color: #b47c56;
+}
+
+.alllogo img{
+    width: 40%;
+    float: right;
+}
+
+/* -------------------------------------------- */
+
+@media (max-width: 768px) {
+    .languagemenu {
+        position: relative;
+    }
+
+    .languagemenu .menu-toggle {
+        display: block;
+    }
+
+    .languagemenu .menu-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .languagemenu .menu-links a {
+        padding: 10px 0;
+    }
+
+    .languagemenu .menu-links.show {
+        display: flex;
+    }
+*{
+    margin:0;
+    padding:0;
+}
+/* START HERE */
+    header {
+        display: flex;
+        max-width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0;
+    }
+
+    .glvlogo {
+        width: 20%;
+    }
+    .title h1{
+        font-size: 12pt;
+        letter-spacing: 0.5pt;
+    }
+    /* Introduction */
+    .introduction p {
+        padding: 40px;
+        font-size: 9pt;
+    }
+    /* TABS */
+    .tabshere {
+        overflow: hidden;
+        border: 1px solid #6d7076;
+        background-color: #282828;
+        padding: 20px 20px;
+        margin: 0 10px;
+    }
+    .tabshere p{
+        color: white;
+    }
+    .tablinks{
+        color:#ffffff;
+    }
+    .tabshere button {
+        padding: 5px 10px;
+        transition: 0.3s;
+        margin-right: 5px;
+        margin-top:5px;
+        font-size: 8pt;
+    }
+    .tabshere button:hover {
+    background-color:#b47c56;
+    color:azure;
+    }
+
+    .tabshere button.active {
+    background-color: #ddd;
+    color: #000000;
+    }
+    .tabcontent {
+        display: none;
+        padding: 6px 12px;
+        border: 1px solid #ccc;
+        border-top: none;
+    }
+    .tabcontent h3{
+        font-size: 12pt;
+        color: rgb(49, 88, 117);
+    }
+    .tabcontent p{
+        font-size: 10pt;
+        text-align: justify;
+        line-height: 150%;
+    }
+    #StayGuide, #FloorGuide , #RoomServices, #Safety, #Dining{
+        padding:20px 10px;
+        margin: 0 10px;
+    }
+    #contents img{
+        max-width: 10%;
+        height: 10%;
+        padding: 2px;
+    }
+    #contents p{
+        padding-left: 20px;
+        font-size: 9pt;
+    }
+/* footer */
+    footer {
+        display: flex;
+        max-width: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        margin: 0;
+    }
+
+    .foot {
+        display: flex;
+        max-width: 100%;
+        flex-direction: column;
+        align-items: center; 
+
+    }
+    .foot img {
+        padding:3px;
+    }
+
+    .foot img:hover {
+        background-color: #b47c56;
+    }
+
+    .alllogo {
+        width: 50%;
+    }
+
+    .alllogo img {
+        width: 100%;
+    }
+}
