@@ -241,6 +241,16 @@ footer {
         display: block;
     }
 
+    .menu-toggle img{
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        padding:2px;
+    }
+    .menu-toggle img:hover{
+        transform:scale(1.5)
+    }
     .languagemenu .menu-links {
         display: none;
         flex-direction: column;
@@ -274,7 +284,7 @@ footer {
     /* Introduction */
     .introduction p {
         padding: 40px;
-        font-size: 10pt;
+        font-size: 9pt;
     }
     /* TABS */
     .tabshere {
